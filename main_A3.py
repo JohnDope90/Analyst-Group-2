@@ -1,12 +1,14 @@
 import ifcopenshell
 from pathlib import Path
 from A3 import StairwayRule, RiserHeightRule, TreadLengthRule, WidthRule, HeadHeightRule
+import re
 
 print("Loading model")
 
 # Specify the IFC model path
-model_path = Path(r"example.ifc")
-
+model_path = "C:\Users\sofie\OneDrive - Danmarks Tekniske Universitet\DTU kandidat\41934 - Advanced BIM\IFC models\GR2406\CES_BLD_24_06_ARC.ifc"
+model_path = model_path.replace("\\", "/")
+print(f"Model path: {model_path}")
 # Check if the file exists and load the model
 if not model_path.is_file():
     raise FileNotFoundError(f"No file found at {model_path}!")

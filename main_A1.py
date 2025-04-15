@@ -1,7 +1,7 @@
 import ifcopenshell
 import os
 
-os.chdir('C:/Users/sofie/OneDrive - Danmarks Tekniske Universitet/DTU kandidat/41934 - Advanced BIM/IFC models/GR06')
+os.chdir("C:\Users\sofie\OneDrive - Danmarks Tekniske Universitet\DTU kandidat\41934 - Advanced BIM\IFC models\GR2406")
 model = ifcopenshell.open('CES_BLD_24_06_ARC.ifc')
 #model = ifcopenshell.open("path/to/ifcfile.ifc")
 
